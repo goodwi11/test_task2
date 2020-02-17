@@ -42,8 +42,15 @@ input[type="checkbox"] {
 }
 
 .InputArea_small {
-  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #b8c9df;
+  border-radius: 4px;
+  margin: 10px 0;
   font-size: 12px;
+}
+
+.InputArea_small:last-child {
+  margin-bottom: 20px;
 }
 
 .InputItem > textarea::placeholder,
