@@ -23,7 +23,9 @@ input[type="checkbox"] {
   align-items: center;
 }
 
-.InputItem > textarea {
+.InputItem > textarea,
+.InputArea,
+.InputArea_small {
   display: -webkit-inline-flex;
   display: -moz-inline-flex;
   display: -ms-inline-flex;
@@ -39,7 +41,14 @@ input[type="checkbox"] {
   outline: none;
 }
 
-.InputItem > textarea::placeholder {
+.InputArea_small {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.InputItem > textarea::placeholder,
+.InputArea::placeholder,
+.InputArea_small::placeholder {
   color: rgb(184, 201, 223);
 }
 

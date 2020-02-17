@@ -102,6 +102,7 @@ const handleSubmit = e => {
     buttonArr: buttonArr,
     header: header,
     about: about,
+    MainQuestion: MainQuestion,
     img: img,
     inputFields: inputFields
   })
@@ -189,6 +190,7 @@ const [inputFields, setInputFields] = useState([
 
       <div className={NewInputs ? 'quiz' : 'quiz_hidden'}>
         <textarea 
+          className="InputArea"
           name='mainQuestion'
           placeholder="Задайте вопрос"
           value = { MainQuestion } 
@@ -198,7 +200,7 @@ const [inputFields, setInputFields] = useState([
           <Fragment key={`${inputField}~${index}`}>
                 <input
                   type="text"
-                  className="form-control"
+                  className="InputArea_small"
                   value={inputField.text} 
                   name = {`question${index}`} 
                   placeholder = {`Вопрос № ${index}`}
